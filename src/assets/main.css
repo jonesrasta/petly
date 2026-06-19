@@ -1,0 +1,195 @@
+
+@import "tailwindcss";
+
+
+:root {
+  font-family: var(--font-sans);
+}
+
+@theme {
+  --font-miguer: "Miguer Sans", sans-serif;
+  --font-sirage: "Sirage", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  background-color: #F4F1EB;
+  overflow-x: clip;
+  /* overflow-x: hidden; */
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  /* overflow-x: hidden; */
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.logout-btn {
+  width: 120px;
+  height: 44px;
+
+  background: #ff4757;
+
+  border: none;
+  border-radius: 8px;
+
+  position: relative;
+
+  cursor: pointer;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 82%,
+    95% 100%,
+    0 100%
+  );
+}
+
+.logout-btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-thinitalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-extralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-extralightitalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-lightitalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-mediumitalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/MiguerSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-semibolditalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-bolditalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-extrabold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-extrabolditalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miguer Sans";
+  src: url("/fonts/miguersans-blackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Sirage";
+  src: url("/fonts/sirage.otf") format("opentype");
+}
+
+section {
+  scroll-margin-top: 1px;
+}
