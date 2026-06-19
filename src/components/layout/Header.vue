@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import { ref } from "vue";
+import Scheduling from "@/components/Scheduling.vue";
+
+const openModal = ref(false);
+</script>
+
+
+
 <template>
     <header class="absolute top-0 left-0 z-50 w-full">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-12">
@@ -20,30 +29,42 @@
                     Entrar
                 </a> -->
 
-                <button class="
-    relative
-    w-34
-    h-13
-    hover:scale-105
-    transition-transform
-  ">
-                    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 140 54" xmlns="http://www.w3.org/2000/svg">
+                <button @click="openModal = true" class="
+          relative
+          w-34
+          h-13
+          hover:scale-105
+          transition-transform
+        ">
+                    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 140 54">
                         <path d="M132 4
-      H18
-      Q8 4 6 10
-      L0 42
-      Q0 50 8 50
-      L122 54
-      Q132 54 134 46
-      L140 12
-      Q140 4 132 4Z" fill="#FF4757" />
+            H18
+            Q8 4 6 10
+            L0 42
+            Q0 50 8 50
+            L122 54
+            Q132 54 134 46
+            L140 12
+            Q140 4 132 4Z" fill="#FF4757" />
                     </svg>
 
-                    <a href="#contato"
-                        class="absolute inset-0 flex items-center justify-center font-miguer text-white font-medium text-lg">
+                    <span class="
+            absolute
+            inset-0
+            flex
+            items-center
+            justify-center
+            text-white
+            font-medium
+            text-lg
+            font-miguer
+          ">
                         Agendar
-                    </a>
+                    </span>
                 </button>
+
+                <!-- Modal -->
+                <Scheduling :isOpen="openModal" @close="openModal = false" />
             </div>
         </div>
     </header>
