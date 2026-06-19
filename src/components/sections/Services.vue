@@ -154,7 +154,7 @@ import { ShowerHead, Scissors, PawPrint, Stethoscope } from "lucide-vue-next";
 .service-card {
   position: relative;
 
-  height: 480px;
+  height: 490px;
 
   padding: 1px;
 
