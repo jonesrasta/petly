@@ -10,7 +10,7 @@ const emit = defineEmits(["close"])
   <Transition name="fade">
     <div
       v-if="isOpen"
-      class="fixed inset-0 z-999 flex items-center justify-center font-miguer bg-black/50 backdrop-blur-sm p-4"
+      class="fixed inset-0 z-999 flex items-center overflow-x-hidden justify-center font-miguer bg-black/50 backdrop-blur-xs p-4"
     >
       <div
         class="
@@ -18,7 +18,7 @@ const emit = defineEmits(["close"])
           w-full
           max-w-3xl
           rounded-3xl
-          bg-[#F4F1EB]/80 
+          bg-[#F4F1EB]/90 
           p-8
           shadow-2xl
           max-h-[90vh]
@@ -31,7 +31,7 @@ const emit = defineEmits(["close"])
           @click="emit('close')"
           class="
             absolute
-            top-5
+            top-3
             right-5
             text-[#003B53]
             text-3xl
@@ -46,11 +46,12 @@ const emit = defineEmits(["close"])
           <h2
             class="
               text-[#003B53]
-              text-4xl
-              md:text-5xl
+              text-3xl
+              md:text-4xl
               italic
               font-bold
               font-miguer
+              mt-4
             "
           >
             Agendar Atendimento
@@ -195,7 +196,7 @@ const emit = defineEmits(["close"])
           </div>
 
           <!-- CTA -->
-          <div class="pt-4">
+          <div class="pt-2">
             <button
               type="submit"
               class="
@@ -255,7 +256,7 @@ const emit = defineEmits(["close"])
   background: transparent;
   border: 1px solid rgba(0, 61, 79, 0.2);
   border-radius: 14px;
-  padding: 14px 16px;
+  padding: 10px 14px;
   color: #003b53;
   outline: none;
 }

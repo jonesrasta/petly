@@ -14,7 +14,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     :href="whatsappLink"
     target="_blank"
     rel="noopener noreferrer"
-    class="group fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#F6424F] text-white shadow-lg transition-all duration-300 hover:scale-110"
+    class="group fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#F6424F] text-white shadow-lg transition-all duration-300 hover:scale-110"
   >
     <Icon
       icon="iconoir:message-solid"
